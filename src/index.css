@@ -1,5 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +15,59 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+  list-style: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  background-color: #90909090;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.accordionBar {
+  box-shadow: 5px 4px 7px 1px #90909090;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50%;
+  padding: 15px 50px;
+  border-top: 4px solid transparent;
+}
+
+.accordionBar .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 130%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.accordionBar .title .titleContent .ID {
+  margin-right: 10px;
+  color: #90909090;
+}
+
+.accordionBar .btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-weight: 700;
+  font-size: 120%;
+  cursor: pointer;
 }
